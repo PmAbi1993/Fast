@@ -30,7 +30,7 @@ platform :ios do
   lane :test do 
     scan(
       xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
-      destination: "name=iPhone 14 Pro Max,OS=16.1"
+      destination: "iPhone 14 Pro (16.1)"
    )
   end
 
