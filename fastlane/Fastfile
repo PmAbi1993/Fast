@@ -39,6 +39,3 @@ platform :ios do
             devices: ["iiPhone 14 Pro (16.1)"],
             scheme: "FastTests")
   end
-
-  
-end
