@@ -23,4 +23,4 @@ jobs:
    #   run: xcodebuild build -project Fast.xcodeproj -scheme Fast clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
     - name: Run tests
-      run:  fastlane test # xcodebuild test -project Fast.xcodeproj -scheme Fast clean build -sdk iOS CODE_SIGNING_ALLOWED=No
+      run:  fastlane run_tests # test # xcodebuild test -project Fast.xcodeproj -scheme Fast clean build -sdk iOS CODE_SIGNING_ALLOWED=No
