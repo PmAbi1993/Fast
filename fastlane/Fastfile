@@ -28,6 +28,8 @@ platform :ios do
 
   desc "Test the changes"
   lane :test do 
-    run_tests(scheme: "Fast")
+    scan(
+      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO"
+   )
   end
 end
