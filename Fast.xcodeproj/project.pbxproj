@@ -13,7 +13,18 @@
 		8EEDBA582A9A3354003876E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEDBA562A9A3354003876E7 /* Main.storyboard */; };
 		8EEDBA5A2A9A3355003876E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEDBA592A9A3355003876E7 /* Assets.xcassets */; };
 		8EEDBA5D2A9A3355003876E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEDBA5B2A9A3355003876E7 /* LaunchScreen.storyboard */; };
+		8EEDBA6B2A9A3553003876E7 /* FastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEDBA6A2A9A3553003876E7 /* FastTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EEDBA6C2A9A3553003876E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EEDBA452A9A3354003876E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EEDBA4C2A9A3354003876E7;
+			remoteInfo = Fast;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8EEDBA4D2A9A3354003876E7 /* Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		8EEDBA592A9A3355003876E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EEDBA5C2A9A3355003876E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EEDBA5E2A9A3355003876E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEDBA682A9A3553003876E7 /* FastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEDBA6A2A9A3553003876E7 /* FastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8EEDBA4A2A9A3354003876E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEDBA652A9A3553003876E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				8EEDBA4F2A9A3354003876E7 /* Fast */,
+				8EEDBA692A9A3553003876E7 /* FastTests */,
 				8EEDBA4E2A9A3354003876E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				8EEDBA4D2A9A3354003876E7 /* Fast.app */,
+				8EEDBA682A9A3553003876E7 /* FastTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				8EEDBA5E2A9A3355003876E7 /* Info.plist */,
 			);
 			path = Fast;
+			sourceTree = "<group>";
+		};
+		8EEDBA692A9A3553003876E7 /* FastTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EEDBA6A2A9A3553003876E7 /* FastTests.swift */,
+			);
+			path = FastTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 8EEDBA4D2A9A3354003876E7 /* Fast.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8EEDBA672A9A3553003876E7 /* FastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEDBA702A9A3553003876E7 /* Build configuration list for PBXNativeTarget "FastTests" */;
+			buildPhases = (
+				8EEDBA642A9A3553003876E7 /* Sources */,
+				8EEDBA652A9A3553003876E7 /* Frameworks */,
+				8EEDBA662A9A3553003876E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EEDBA6D2A9A3553003876E7 /* PBXTargetDependency */,
+			);
+			name = FastTests;
+			productName = FastTests;
+			productReference = 8EEDBA682A9A3553003876E7 /* FastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					8EEDBA4C2A9A3354003876E7 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					8EEDBA672A9A3553003876E7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8EEDBA4C2A9A3354003876E7;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				8EEDBA4C2A9A3354003876E7 /* Fast */,
+				8EEDBA672A9A3553003876E7 /* FastTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +181,13 @@
 				8EEDBA5D2A9A3355003876E7 /* LaunchScreen.storyboard in Resources */,
 				8EEDBA5A2A9A3355003876E7 /* Assets.xcassets in Resources */,
 				8EEDBA582A9A3354003876E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEDBA662A9A3553003876E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EEDBA642A9A3553003876E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEDBA6B2A9A3553003876E7 /* FastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EEDBA6D2A9A3553003876E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EEDBA4C2A9A3354003876E7 /* Fast */;
+			targetProxy = 8EEDBA6C2A9A3553003876E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8EEDBA562A9A3354003876E7 /* Main.storyboard */ = {
@@ -336,6 +412,42 @@
 			};
 			name = Release;
 		};
+		8EEDBA6E2A9A3553003876E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8595TPBJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pmAbi.FastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fast";
+			};
+			name = Debug;
+		};
+		8EEDBA6F2A9A3553003876E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8595TPBJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pmAbi.FastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fast";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +465,15 @@
 			buildConfigurations = (
 				8EEDBA622A9A3355003876E7 /* Debug */,
 				8EEDBA632A9A3355003876E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEDBA702A9A3553003876E7 /* Build configuration list for PBXNativeTarget "FastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEDBA6E2A9A3553003876E7 /* Debug */,
+				8EEDBA6F2A9A3553003876E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
