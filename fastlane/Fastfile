@@ -34,8 +34,8 @@ platform :ios do
    )
   end
 
-  desc "Test the changes 2"
-  run_tests(workspace: "Fast.xcworkspace",
-            devices: ["iPhone 14 Pro (16.1)"],
-            scheme: "FastTests")
-  end
+ # desc "Test the changes 2"
+ # run_tests(workspace: "Fast.xcworkspace",
+ #           devices: ["iPhone 14 Pro (16.1)"],
+ #           scheme: "FastTests")
+ # end
