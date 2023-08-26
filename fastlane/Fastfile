@@ -29,7 +29,8 @@ platform :ios do
   desc "Test the changes"
   lane :test do 
     scan(
-      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO"
+      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
+      devices: ["iPhone 6s", "iPad Air"]
    )
   end
 end
