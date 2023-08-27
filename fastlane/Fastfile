@@ -22,8 +22,12 @@ end
 platform :ios do
   desc "Description of what the lane does"
   lane :increment_build do 
+    # increment_build_number
+    # commit_version_bump
     increment_build_number
-    commit_version_bump
+    commit_version_bump(
+      settings: true # Include Settings.bundle/Root.plist
+    )
   end
 
   desc "Test the changes"
