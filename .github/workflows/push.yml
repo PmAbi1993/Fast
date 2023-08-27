@@ -25,3 +25,5 @@ jobs:
     - name: Run tests
       run: fastlane test
       # fastlane runTest # test # xcodebuild test -project Fast.xcodeproj -scheme Fast clean build -sdk iOS CODE_SIGNING_ALLOWED=No
+    - name: update build number
+      run: fastlane increment_build
