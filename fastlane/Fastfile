@@ -25,9 +25,7 @@ platform :ios do
     # increment_build_number
     # commit_version_bump
     increment_build_number
-    commit_version_bump(
-      settings: true # Include Settings.bundle/Root.plist
-    )
+    commit_version_bump()
   end
 
   desc "Test the changes"
