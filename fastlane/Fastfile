@@ -29,7 +29,7 @@ platform :ios do
     push_to_git_remote(
     remote: "origin",  # or the name of the remote you wish to push to
     local_branch: "main",  # or the name of your local branch
-    remote_branch: "main"  # or the name of your remote branch,
+    remote_branch: "main",  # or the name of your remote branch
     tags: true
   )
   end
