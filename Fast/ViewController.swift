@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         
         let sample = (0...10).map({ String("Demo \($0),") }).reduce("", { $0 + $1 })
         print(sample)
+         // Do any additional setup after loading the view.
+        // added new code
+        // Added ability to push changes from github
+        
     }
 }
 
