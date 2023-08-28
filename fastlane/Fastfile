@@ -26,6 +26,10 @@ platform :ios do
     # commit_version_bump
     increment_build_number
     commit_version_bump()
+    push_to_git_remote(
+    remote: "origin",  # or the name of the remote you wish to push to
+    branch: "main"  # or the name of your branch
+  )
   end
 
   desc "Test the changes"
